@@ -1,0 +1,48 @@
+body{
+    font-family: 'Lucida Sans', sans-serif;
+    padding: 10px;
+    background-color: #c2d6ac;
+}
+
+.title{
+    padding: 10px;
+    text-align: center;
+    color: rgb(5, 88, 5);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.photo-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media screen and (min-width:600px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (min-width:768px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:992px){
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
